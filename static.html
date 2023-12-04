@@ -10,8 +10,100 @@
     <title>Static</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js" crossorigin="anonymous"></script>
+    <script data-search-pseudo-elements defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let barChart;
+            barChart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'bar-chart-container'
+                },
+                title: 0,
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        showInLegend: true
+                    }
+                },
+                legend: {
+                    maxHeight: 100,
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Jumlah',
+                    shadow: 1,
+                    border: 1,
+                    data: [
+                        ['Dibawah 1 Tahun', 1],
+                        ['2 S/d 4 Tahun', 2],
+                        ['5 S/d 9 Tahun', 370],
+                        ['10 S/d 14 Tah', 524],
+                        ['', 570],
+                        ['20 S/d 24 Tahun', 601],
+                        ['25 S/d 29 Tahun', 632],
+                        ['30 S/d 34 Tahun', 564],
+                        ['35 S/d 39 Tahun ', 497],
+                        ['40 S/d 44 Tahun', 589],
+                        ['45 S/d 49 Tahun', 534],
+                        ['50 S/d 54 Tahun', 611],
+                        ['55 S/d 59 Tahun', 600],
+                        ['60 S/d 64 Tahun', 508],
+                        ['65 S/d 69 Tahun', 435],
+                        ['70 S/d 74 Tahun', 296],
+                        ['Diatas 75 Tahun', 678],
+                    ]
+                }]
+            });
+
+            let pieChart;
+            pieChart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'pie-chart-container'
+                },
+                title: 0,
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        showInLegend: true
+                    }
+                },
+                legend: {
+                    maxHeight: 100,
+                },
+                series: [{
+                    type: 'bar',
+                    name: 'Jumlah',
+                    shadow: 1,
+                    border: 1,
+                    data: [
+                        ['Dibawah 1 Tahun', 1],
+                        ['2 S/d 4 Tahun', 2],
+                        ['5 S/d 9 Tahun', 370],
+                        ['10 S/d 14 Tah', 524],
+                        ['', 570],
+                        ['20 S/d 24 Tahun', 601],
+                        ['25 S/d 29 Tahun', 632],
+                        ['30 S/d 34 Tahun', 564],
+                        ['35 S/d 39 Tahun ', 497],
+                        ['40 S/d 44 Tahun', 589],
+                        ['45 S/d 49 Tahun', 534],
+                        ['50 S/d 54 Tahun', 611],
+                        ['55 S/d 59 Tahun', 600],
+                        ['60 S/d 64 Tahun', 508],
+                        ['65 S/d 69 Tahun', 435],
+                        ['70 S/d 74 Tahun', 296],
+                        ['Diatas 75 Tahun', 678],
+                    ]
+                }]
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -22,7 +114,9 @@
                 <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
                     <div class="container px-5">
                         <a class="navbar-brand text-dark" href="home.html"> SID GK </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <i data-feather="menu"></i>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -280,7 +374,8 @@
                                     </p>
                                     <div class="d-flex align-items-center justify-content-between mb-5">
                                         <div class="single-post-meta me-4">
-                                            <img class="single-post-meta-img" src="assets/img/illustrations/profiles/profile-1.png" />
+                                            <img class="single-post-meta-img"
+                                                src="assets/img/illustrations/profiles/profile-1.png" />
                                             <div class="single-post-meta-details">
                                                 <div class="single-post-meta-details-name">
                                                     Valerie Luna
@@ -293,13 +388,128 @@
                                         <div class="single-post-meta-links">
                                             <a href="#!"><i class="fab fa-twitter fa-fw"></i></a>
                                             <a href="#!"><i class="fab fa-facebook-f fa-fw"></i></a>
-                                            <a href="#!"><i class="fas fa-bookmark fa-fw"></i></a>
+                                            <!-- <a href="#!"><i class="fas fa-bookmark fa-fw"></i></a> -->
                                         </div>
                                     </div>
-                                    <img class="img-fluid mb-2 rounded" src="https://source.unsplash.com/vZJdYl5JVXY/990x540" />
-                                    <div class="small text-gray-500 text-center">
-                                        Photo Credit: Unsplash
-                                    </div>
+
+                                    <!-- dummy table -->
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">No</th>
+                                                <th scope="row">Nama Padukuhan</th>
+                                                <th scope="row">Nama Kepala Padukuhan</th>
+                                                <th scope="row">Jumlah RT</th>
+                                                <th scope="row">Jumlah KK</th>
+                                                <th scope="row">Jiwa</th>
+                                                <th scope="row">Lk</th>
+                                                <th scope="row">Pr</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>9</td>
+                                                <td>227</td>
+                                                <td>731</td>
+                                                <td>370</td>
+                                                <td>361</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
                                     <div class="single-post-text my-5">
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -320,6 +530,11 @@
                                             doloremque.
                                         </p>
                                         <h4>Creating Something New</h4>
+
+                                        <!-- bar chart -->
+                                        <div id="bar-chart-container"
+                                            style="width:100%; height:400px;margin-bottom: 24px;"></div>
+
                                         <p>
                                             Laborum placeat quas accusantium vitae perferendis
                                             dolores possimus tempora, qui consectetur hic ullam
@@ -361,10 +576,11 @@
                                             delectus repellendus totam accusamus sint magni dolore
                                             atque qui.
                                         </p>
-                                        <img class="img-fluid mb-2 rounded" src="https://source.unsplash.com/sv8oOQaUb-o/990x540" />
-                                        <div class="small text-gray-500 text-center">
-                                            Photo Credit: Unsplash
-                                        </div>
+
+                                        <!-- pie chart -->
+                                        <div id="pie-chart-container"
+                                            style="width:100%; height:400px;margin-bottom: 24px;"></div>
+
                                         <h4>It's time to build your new project</h4>
                                         <p>
                                             Laborum placeat quas accusantium vitae perferendis
@@ -396,7 +612,8 @@
                     </div>
                     <div class="svg-border-rounded text-dark">
                         <!-- Rounded SVG Border-->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
                             <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
                         </svg>
                     </div>
@@ -467,7 +684,8 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-md-6 small">
                             Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script>. Sistem Informasi Desa (SID) Kabupaten Gunungkidul
+                            <script>document.write(new Date().getFullYear());</script>. Sistem Informasi Desa (SID)
+                            Kabupaten Gunungkidul
                         </div>
                         <div class="col-md-6 text-md-end small">
                             <a href="#!">Kebijakan Privasi</a>
@@ -479,7 +697,8 @@
             </footer>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
