@@ -430,7 +430,7 @@
                                     <button class="nav-link text-left small" id="v-pills-penyandang-cacat-tab"
                                         data-toggle="pill" data-target="#v-pills-penyandang-cacat" type="button"
                                         role="tab" aria-controls="v-pills-penyandang-cacat"
-                                        aria-selected="false">Penyandang Catat</button>
+                                        aria-selected="false">Penyandang Cacat</button>
                                     <button class="nav-link text-left small" id="v-pills-status-penduduk-tab"
                                         data-toggle="pill" data-target="#v-pills-status-penduduk" type="button"
                                         role="tab" aria-controls="v-pills-status-penduduk" aria-selected="false">Status
@@ -3397,13 +3397,650 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="v-pills-warga-negara" role="tabpanel"
-                                        aria-labelledby="v-pills-warga-negara-tab">Test4</div>
+                                        aria-labelledby="v-pills-warga-negara-tab">
+                                        <!-- DataTables Warga Negara -->
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">Warga Negara</h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped compact"
+                                                        id="dataTable-warga-negara" width="100%" cellspacing="0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>No </th>
+                                                                <th>Jenis Kelompok </th>
+                                                                <th>Jumlah </th>
+                                                                <th>%</th>
+                                                                <th>Laki-Laki </th>
+                                                                <th>%</th>
+                                                                <th>Perempuan </th>
+                                                                <th>%</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th>No </th>
+                                                                <th>Jenis Kelompok </th>
+                                                                <th>Jumlah </th>
+                                                                <th>%</th>
+                                                                <th>Laki-Laki </th>
+                                                                <th>%</th>
+                                                                <th>Perempuan </th>
+                                                                <th>%</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </tfoot>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" width="2">1</td>
+                                                                <td>WNI</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/1/0">2491</a>
+                                                                </td>
+                                                                <td>99.92%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/1/1">1219</a>
+                                                                </td>
+                                                                <td>48.90%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/1/2">1272</a>
+                                                                </td>
+                                                                <td>51.02%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">2</td>
+                                                                <td>WNA</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/2/0">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/2/1">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/2/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">3</td>
+                                                                <td>DUA KEWARGANEGARAAN</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/3/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/3/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/3/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="tab-pane fade" id="v-pills-golongan-darah" role="tabpanel"
-                                        aria-labelledby="v-pills-golongan-darah-tab">Test4</div>
+                                        aria-labelledby="v-pills-golongan-darah-tab">
+                                        <!-- DataTables Golongan Darah -->
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">Golongan Darah</h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped compact"
+                                                        id="dataTable-golongan-darah" width="100%" cellspacing="0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>No </th>
+                                                                <th>Jenis Kelompok </th>
+                                                                <th>Jumlah </th>
+                                                                <th>%</th>
+                                                                <th>Laki-Laki </th>
+                                                                <th>%</th>
+                                                                <th>Perempuan </th>
+                                                                <th>%</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th>No </th>
+                                                                <th>Jenis Kelompok </th>
+                                                                <th>Jumlah </th>
+                                                                <th>%</th>
+                                                                <th>Laki-Laki </th>
+                                                                <th>%</th>
+                                                                <th>Perempuan </th>
+                                                                <th>%</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </tfoot>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" width="2">1</td>
+                                                                <td>A</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/1/0">6</a>
+                                                                </td>
+                                                                <td>0.24%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/1/1">2</a>
+                                                                </td>
+                                                                <td>0.08%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/1/2">4</a>
+                                                                </td>
+                                                                <td>0.16%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">2</td>
+                                                                <td>B</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/2/0">9</a>
+                                                                </td>
+                                                                <td>0.36%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/2/1">4</a>
+                                                                </td>
+                                                                <td>0.16%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/2/2">5</a>
+                                                                </td>
+                                                                <td>0.20%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">3</td>
+                                                                <td>AB</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/3/0">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/3/1">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/3/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">4</td>
+                                                                <td>O</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/4/0">21</a>
+                                                                </td>
+                                                                <td>0.84%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/4/1">12</a>
+                                                                </td>
+                                                                <td>0.48%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/4/2">9</a>
+                                                                </td>
+                                                                <td>0.36%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">5</td>
+                                                                <td>A+</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/5/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/5/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/5/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">6</td>
+                                                                <td>A-</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/6/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/6/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/6/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">7</td>
+                                                                <td>B+</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/7/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/7/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/7/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">8</td>
+                                                                <td>B-</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/8/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/8/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/8/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">9</td>
+                                                                <td>AB+</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/9/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/9/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/9/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">10</td>
+                                                                <td>AB-</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/10/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/10/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/10/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">11</td>
+                                                                <td>O+</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/11/0">2</a>
+                                                                </td>
+                                                                <td>0.08%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/11/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/11/2">2</a>
+                                                                </td>
+                                                                <td>0.08%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">12</td>
+                                                                <td>O-</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/12/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/12/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/12/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">13</td>
+                                                                <td>TIDAK TAHU</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/13/0">2454</a>
+                                                                </td>
+                                                                <td>98.44%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/13/1">1202</a>
+                                                                </td>
+                                                                <td>48.22%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/13/2">1252</a>
+                                                                </td>
+                                                                <td>50.22%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="tab-pane fade" id="v-pills-penyandang-cacat" role="tabpanel"
-                                        aria-labelledby="v-pills-penyandang-cacat-tab">Test4</div>
+                                        aria-labelledby="v-pills-penyandang-cacat-tab">
+                                        <!-- DataTables Penyandang Cacat -->
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">Penyandangan Cacat</h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped compact"
+                                                        id="dataTable-penyandang-cacat" width="100%" cellspacing="0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>No </th>
+                                                                <th>Jenis Kelompok </th>
+                                                                <th>Jumlah </th>
+                                                                <th>%</th>
+                                                                <th>Laki-Laki </th>
+                                                                <th>%</th>
+                                                                <th>Perempuan </th>
+                                                                <th>%</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th>No </th>
+                                                                <th>Jenis Kelompok </th>
+                                                                <th>Jumlah </th>
+                                                                <th>%</th>
+                                                                <th>Laki-Laki </th>
+                                                                <th>%</th>
+                                                                <th>Perempuan </th>
+                                                                <th>%</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </tfoot>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" width="2">1</td>
+                                                                <td>CACAT FISIK</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/1/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/1/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/1/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">2</td>
+                                                                <td>CACAT NETRA/BUTA</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/2/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/2/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/2/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">3</td>
+                                                                <td>CACAT RUNGU/WICARA</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/3/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/3/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/3/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">4</td>
+                                                                <td>CACAT MENTAL/JIWA</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/4/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/4/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/4/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">5</td>
+                                                                <td>CACAT FISIK DAN MENTAL</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/5/0">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/5/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/5/2">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">6</td>
+                                                                <td>CACAT LAINNYA</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/6/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/6/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/6/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">7</td>
+                                                                <td>TIDAK CACAT</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/7/0">5</a>
+                                                                </td>
+                                                                <td>0.20%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/7/1">4</a>
+                                                                </td>
+                                                                <td>0.16%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/7/2">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="tab-pane fade" id="v-pills-status-penduduk" role="tabpanel"
-                                        aria-labelledby="v-pills-status-penduduk-tab">Test4</div>
+                                        aria-labelledby="v-pills-status-penduduk-tab">
+                                        <!-- DataTables Status Penduduk -->
+                                        <div class="card shadow mb-4">
+                                            <div class="card-header py-3">
+                                                <h6 class="m-0 font-weight-bold text-primary">Status Penduduk</h6>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered table-striped compact"
+                                                        id="dataTable-status-penduduk" width="100%" cellspacing="0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>No </th>
+                                                                <th>Jenis Kelompok </th>
+                                                                <th>Jumlah </th>
+                                                                <th>%</th>
+                                                                <th>Laki-Laki </th>
+                                                                <th>%</th>
+                                                                <th>Perempuan </th>
+                                                                <th>%</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th>No </th>
+                                                                <th>Jenis Kelompok </th>
+                                                                <th>Jumlah </th>
+                                                                <th>%</th>
+                                                                <th>Laki-Laki </th>
+                                                                <th>%</th>
+                                                                <th>Perempuan </th>
+                                                                <th>%</th>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </tfoot>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="center" width="2">1</td>
+                                                                <td>TETAP</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/1/0">2492</a>
+                                                                </td>
+                                                                <td>99.96%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/1/1">1220</a>
+                                                                </td>
+                                                                <td>48.94%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/1/2">1272</a>
+                                                                </td>
+                                                                <td>51.02%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">2</td>
+                                                                <td>TIDAK AKTIF</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/2/0">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/2/1">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/2/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" width="2">3</td>
+                                                                <td>PENDATANG</td>
+                                                                <td align="right">
+                                                                    <a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/3/0">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/3/1">1</a>
+                                                                </td>
+                                                                <td>0.04%</td>
+                                                                <td align="right"><a
+                                                                        href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/3/2">0</a>
+                                                                </td>
+                                                                <td>0.00%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
