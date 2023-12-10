@@ -3,16 +3,19 @@
 const defaultButton = [
   {
     text: `<i class="fa fa-trash" aria-hidden="true"></i></i>&nbsp;Hapus Data`,
+    className: "btn-sm",
     action: function (e, dt, node, config) {
       dt.ajax.reload();
     },
   },
   {
     text: `<i class="fa fa-print" aria-hidden="true"></i>&nbsp;Cetak Data`,
+    className: "btn-sm",
     split: ["csv", "pdf", "excel"],
   },
   {
     text: `<i class="fa fa-filter" aria-hidden="true"></i>&nbsp;Preferensi Kolom`,
+    className: "btn-sm",
     extend: "colvis",
   },
 ];
