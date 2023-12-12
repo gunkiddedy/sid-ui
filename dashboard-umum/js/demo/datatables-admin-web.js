@@ -87,4 +87,64 @@ $(document).ready(function () {
     .buttons()
     .container()
     .appendTo("#dataTable-laporan-desa_wrapper .col-md-6:eq(0)");
+
+  const tableMenuStatis = $("#dataTable-menu-statis").DataTable({
+    lengthChange: false,
+    buttons: defaultButton,
+  });
+
+  tableMenuStatis
+    .buttons()
+    .container()
+    .appendTo("#dataTable-menu-statis_wrapper .col-md-6:eq(0)");
+
+  const tableMenuDinamis = $("#dataTable-pengolahan-kategori").DataTable({
+    lengthChange: false,
+    buttons: defaultButton,
+  });
+
+  tableMenuDinamis
+    .buttons()
+    .container()
+    .appendTo("#dataTable-pengolahan-kategori_wrapper .col-md-6:eq(0)");
+
+  const tableDaftarKomentar = $("#dataTable-daftar-komentar").DataTable({
+    lengthChange: false,
+    buttons: defaultButton,
+  });
+
+  tableDaftarKomentar
+    .buttons()
+    .container()
+    .appendTo("#dataTable-daftar-komentar_wrapper .col-md-6:eq(0)");
+
+  const tableDaftarGaleri = $("#dataTable-daftar-galeri").DataTable({
+    lengthChange: false,
+    buttons: defaultButton,
+  });
+
+  tableDaftarGaleri
+    .buttons()
+    .container()
+    .appendTo("#dataTable-daftar-galeri_wrapper .col-md-6:eq(0)");
+
+  const tableDaftarDokumen = $("#dataTable-daftar-dokumen").DataTable({
+    lengthChange: false,
+    buttons: defaultButton,
+  });
+
+  tableDaftarDokumen
+    .buttons()
+    .container()
+    .appendTo("#dataTable-daftar-dokumen_wrapper .col-md-6:eq(0)");
+
+  const tableSocialMedia = $("#dataTable-social-media").DataTable({
+    lengthChange: false,
+    buttons: defaultButton,
+  });
+
+  tableSocialMedia
+    .buttons()
+    .container()
+    .appendTo("#dataTable-social-media_wrapper .col-md-6:eq(0)");
 });
