@@ -5296,6 +5296,10 @@ fieldset:disabled .btn {
     border-color 0.15s ease-in-out;
 }
 
+.nav-header-sub {
+  font-size: 14px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
