@@ -129,4 +129,30 @@ $(document).ready(function () {
     .buttons()
     .container()
     .appendTo("#dataTable-status-penduduk_wrapper .col-md-6:eq(0)");
+
+  const tableLaporanPerkembanganPenduduk = $(
+    "#dataTable-laporan-perkembangan-penduduk"
+  ).DataTable({
+    lengthChange: false,
+    buttons: defaultButton,
+  });
+
+  tableLaporanPerkembanganPenduduk
+    .buttons()
+    .container()
+    .appendTo(
+      "#dataTable-laporan-perkembangan-penduduk_wrapper .col-md-6:eq(0)"
+    );
+
+  const tablelaporanKelompokRentan = $(
+    "#dataTable-laporan-kelompok-rentan"
+  ).DataTable({
+    lengthChange: false,
+    buttons: defaultButton,
+  });
+
+  tablelaporanKelompokRentan
+    .buttons()
+    .container()
+    .appendTo("#dataTable-laporan-kelompok-rentan_wrapper .col-md-6:eq(0)");
 });
