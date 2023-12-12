@@ -20982,6 +20982,10 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .navbar-marketing {
+    border-top: 4px solid #00ba94;
+  }
+
   .navbar-marketing.bg-transparent.navbar-dark {
     background-color: #212832 !important;
   }
