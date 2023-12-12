@@ -366,7 +366,7 @@
                     <div class="container-fluid">
 
                         <!-- Page Heading -->
-                        <h1 class="h3 mb-2 text-gray-800">Statisktik</h1>
+                        <h1 class="h3 mb-2 text-gray-800">Admin Web</h1>
                         <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table
                             below.
                             For more information about DataTables, please visit the <a target="_blank"
@@ -376,29 +376,46 @@
                             <div class="card-header border-bottom">
                                 <ul class="nav nav-tabs card-header-tabs" id="cardTab" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="card-statistik-penduduk-tab"
-                                            href="#card-statistik-penduduk" data-toggle="tab" role="tab"
-                                            aria-controls="card-statistik-penduduk" aria-selected="true">Statistik
-                                            Kependudukan</a>
+                                        <a class="nav-link active" id="card-artikel-tab" href="#card-artikel"
+                                            data-toggle="tab" role="tab" aria-controls="card-artikel"
+                                            aria-selected="true">Artikel</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="laporan-kependudukan-tab" href="#laporan-kependudukan"
-                                            data-toggle="tab" role="tab" aria-controls="laporan-kependudukan"
-                                            aria-selected="false">Laporan
-                                            Kependudukan</a>
+                                        <a class="nav-link" id="card-menu-statis-tab" href="#card-menu-statis"
+                                            data-toggle="tab" role="tab" aria-controls="card-menu-statis"
+                                            aria-selected="false">Menu Statis</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="laporan-kelompok-rentan-tab"
-                                            href="#laporan-kelompok-rentan" data-toggle="tab" role="tab"
-                                            aria-controls="laporan-kelompok-rentan" aria-selected="false">Laporan
-                                            Kelompok Rentan</a>
+                                        <a class="nav-link" id="card-menu-dinamis-tab" href="#card-menu-dinamis"
+                                            data-toggle="tab" role="tab" aria-controls="card-menu-dinamis"
+                                            aria-selected="false">Menu Dinamis /
+                                            Kategori</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="card-komentar-tab" href="#card-komentar"
+                                            data-toggle="tab" role="tab" aria-controls="card-komentar"
+                                            aria-selected="false">Komentar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="card-gallery-tab" href="#card-gallery" data-toggle="tab"
+                                            role="tab" aria-controls="card-gallery" aria-selected="false">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="card-dokumen-tab" href="#card-dokumen" data-toggle="tab"
+                                            role="tab" aria-controls="card-dokumen" aria-selected="false">Dokumen</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="card-media-sosial-tab" href="#card-media-sosial"
+                                            data-toggle="tab" role="tab" aria-controls="card-media-sosial"
+                                            aria-selected="false">Media
+                                            Sosial</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="card-body">
                                 <div class="tab-content" id="cardTabContent">
-                                    <div class="tab-pane fade show active" id="card-statistik-penduduk" role="tabpanel"
-                                        aria-labelledby="card-statistik-penduduk-tab">
+                                    <div class="tab-pane fade show active" id="card-artikel" role="tabpanel"
+                                        aria-labelledby="card-artikel-tab">
                                         <ul class="nav" id="tabDropdown" role="tablist">
                                             <li class="dropdown">
                                                 <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
@@ -406,56 +423,43 @@
                                                     Pilih Menu
                                                 </a>
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" id="umur-tab" data-toggle="tab"
-                                                        href="#umur" role="tab" aria-controls="umur">Menu Umur</a>
-                                                    <a class="dropdown-item" id="pendidikan-dalam-kk-tab"
-                                                        data-toggle="tab" href="#pendidikan-dalam-kk" role="tab"
-                                                        aria-controls="pendidikan-dalam-kk">Pendidikan Dalam KK
+                                                    <a class="dropdown-item" id="teks-berjalan-tab" data-toggle="tab"
+                                                        href="#teks-berjalan" role="tab"
+                                                        aria-controls="teks-berjalan">Teks Berjalan</a>
+                                                    <a class="dropdown-item" id="sekilas-info-tab" data-toggle="tab"
+                                                        href="#sekilas-info" role="tab"
+                                                        aria-controls="sekilas-info">Sekilas Info
                                                     </a>
-                                                    <a class="dropdown-item" id="pendidikan-sedang-tab"
-                                                        data-toggle="tab" href="#pendidikan-sedang" role="tab"
-                                                        aria-controls="pendidikan-sedang">Pendidikan Sedang Ditempuh
+                                                    <a class="dropdown-item" id="agenda-desa-tab" data-toggle="tab"
+                                                        href="#agenda-desa" role="tab"
+                                                        aria-controls="agenda-desa">Agenda Desa
                                                     </a>
-                                                    <a class="dropdown-item" id="pekerjaan-tab" data-toggle="tab"
-                                                        href="#pekerjaan" role="tab" aria-controls="pekerjaan">Pekerjaan
+                                                    <a class="dropdown-item" id="produk-desa-tab" data-toggle="tab"
+                                                        href="#produk-desa" role="tab"
+                                                        aria-controls="produk-desa">Produk Desa
                                                     </a>
-                                                    <a class="dropdown-item" id="status-perkawinan-tab"
-                                                        data-toggle="tab" href="#status-perkawinan" role="tab"
-                                                        aria-controls="status-perkawinan">Status Perkawinan
+                                                    <a class="dropdown-item" id="panduan-layanan-desa-tab"
+                                                        data-toggle="tab" href="#panduan-layanan-desa" role="tab"
+                                                        aria-controls="panduan-layanan-desa">Panduan Layanan Desa
                                                     </a>
-                                                    <a class="dropdown-item" id="agama-tab" data-toggle="tab"
-                                                        href="#agama" role="tab" aria-controls="agama">Agama
+                                                    <a class="dropdown-item" id="peraturan-desa-tab" data-toggle="tab"
+                                                        href="#peraturan-desa" role="tab"
+                                                        aria-controls="peraturan-desa">Peraturan Desa
                                                     </a>
-                                                    <a class="dropdown-item" id="jenis-kelamin-tab" data-toggle="tab"
-                                                        href="#jenis-kelamin" role="tab"
-                                                        aria-controls="jenis-kelamin">Jenis Kelamin
-                                                    </a>
-                                                    <a class="dropdown-item" id="warga-negara-tab" data-toggle="tab"
-                                                        href="#warga-negara" role="tab"
-                                                        aria-controls="warga-negara">Warga Negara
-                                                    </a>
-                                                    <a class="dropdown-item" id="golongan-darah-tab" data-toggle="tab"
-                                                        href="#golongan-darah" role="tab"
-                                                        aria-controls="golongan-darah">Golongan Darah
-                                                    </a>
-                                                    <a class="dropdown-item" id="penyandang-cacat-tab" data-toggle="tab"
-                                                        href="#penyandang-cacat" role="tab"
-                                                        aria-controls="penyandang-cacat">Penyandang Cacat
-                                                    </a>
-                                                    <a class="dropdown-item" id="status-penduduk-tab" data-toggle="tab"
-                                                        href="#status-penduduk" role="tab"
-                                                        aria-controls="status-penduduk">Status Penduduk
+                                                    <a class="dropdown-item" id="laporan-desa-tab" data-toggle="tab"
+                                                        href="#laporan-desa" role="tab"
+                                                        aria-controls="laporan-desa">Laporan Desa
                                                     </a>
                                                 </div>
                                             </li>
                                         </ul>
                                         <div class="tab-content mt-2" id="tabDropdownContent">
-                                            <div class="tab-pane fade show active" id="umur" role="tabpanel"
-                                                aria-labelledby="umur-tab">
-                                                <!-- DataTables Umur -->
+                                            <div class="tab-pane fade show active" id="teks-berjalan" role="tabpanel"
+                                                aria-labelledby="teks-berjalan-tab">
+                                                <!-- DataTables teks berjalan -->
                                                 <div class="card shadow mb-4">
                                                     <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Umur</h6>
+                                                        <h6 class="m-0 font-weight-bold text-primary">Teks Berjalan</h6>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="table-responsive">
@@ -800,18 +804,17 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="pendidikan-dalam-kk" role="tabpanel"
-                                                aria-labelledby="pendidikan-dalam-kk-tab">
-                                                <!-- DataTables Pendidikan dalam KK -->
+                                            <div class="tab-pane fade" id="sekilas-info" role="tabpanel"
+                                                aria-labelledby="sekilas-info-tab">
+                                                <!-- DataTables Sekilas Info -->
                                                 <div class="card shadow mb-4">
                                                     <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Pendidikan
-                                                            Dalam KK</h6>
+                                                        <h6 class="m-0 font-weight-bold text-primary">Sekilas Info</h6>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="table-responsive">
                                                             <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-pendidikan-dalam-kk" width="100%"
+                                                                id="dataTable-sekilas-info" width="100%"
                                                                 cellspacing="0">
                                                                 <thead>
                                                                     <tr>
@@ -1026,20 +1029,17 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="pendidikan-sedang" role="tabpanel"
-                                                aria-labelledby="pendidikan-sedang-tab">
-                                                <!-- DataTables Pendidikan sedang ditempuh -->
+                                            <div class="tab-pane fade" id="agenda-desa" role="tabpanel"
+                                                aria-labelledby="agenda-desa-tab">
+                                                <!-- DataTables Agenda Desa -->
                                                 <div class="card shadow mb-4">
                                                     <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Pendidikan
-                                                            Sedang
-                                                            Ditempuh</h6>
+                                                        <h6 class="m-0 font-weight-bold text-primary">Agenda Desa</h6>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="table-responsive">
                                                             <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-pendidikan-sedang-ditempuh" width="100%"
-                                                                cellspacing="0">
+                                                                id="dataTable-agenda-desa" width="100%" cellspacing="0">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>No </th>
@@ -1399,18 +1399,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="pekerjaan" role="tabpanel"
-                                                aria-labelledby="pekerjaan-tab">
-                                                <!-- DataTables Pekerjaan -->
+                                            <div class="tab-pane fade" id="produk-desa" role="tabpanel"
+                                                aria-labelledby="produk-desa-tab">
+                                                <!-- DataTables Produk Desa -->
                                                 <div class="card shadow mb-4">
                                                     <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Pekerjaan
+                                                        <h6 class="m-0 font-weight-bold text-primary">Produk Desa
                                                         </h6>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="table-responsive">
                                                             <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-pekerjaan" width="100%" cellspacing="0">
+                                                                id="dataTable-produk-desa" width="100%" cellspacing="0">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>No </th>
@@ -3047,9 +3047,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="status-perkawinan" role="tabpanel"
-                                                aria-labelledby="status-perkawinan-tab">
-                                                <!-- DataTables status perkawinan -->
+                                            <div class="tab-pane fade" id="panduan-layanan-desa" role="tabpanel"
+                                                aria-labelledby="panduan-layanan-desa-tab">
+                                                <!-- DataTables Panduan Layanan Desa -->
                                                 <div class="card shadow mb-4">
                                                     <div class="card-header py-3">
                                                         <h6 class="m-0 font-weight-bold text-primary">Status
@@ -3058,7 +3058,7 @@
                                                     <div class="card-body">
                                                         <div class="table-responsive">
                                                             <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-status-perkawinan" width="100%"
+                                                                id="dataTable-panduan-layanan-desa" width="100%"
                                                                 cellspacing="0">
                                                                 <thead>
                                                                     <tr>
@@ -3165,17 +3165,19 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="agama" role="tabpanel"
-                                                aria-labelledby="agama-tab">
-                                                <!-- DataTables agama -->
+                                            <div class="tab-pane fade" id="peraturan-desa" role="tabpanel"
+                                                aria-labelledby="peraturan-desa-tab">
+                                                <!-- DataTables Peraturan Desa -->
                                                 <div class="card shadow mb-4">
                                                     <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Agama</h6>
+                                                        <h6 class="m-0 font-weight-bold text-primary">Peraturan Desa
+                                                        </h6>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="table-responsive">
                                                             <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-agama" width="100%" cellspacing="0">
+                                                                id="dataTable-peraturan-desa" width="100%"
+                                                                cellspacing="0">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>No </th>
@@ -3336,9 +3338,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="jenis-kelamin" role="tabpanel"
-                                                aria-labelledby="jenis-kelamin-tab">
-                                                <!-- DataTables jenis kelamin -->
+                                            <div class="tab-pane fade" id="laporan-desa" role="tabpanel"
+                                                aria-labelledby="laporan-desa-tab">
+                                                <!-- DataTables Laporan Desa -->
                                                 <div class="card shadow mb-4">
                                                     <div class="card-header py-3">
                                                         <h6 class="m-0 font-weight-bold text-primary">Jenis
@@ -3347,7 +3349,7 @@
                                                     <div class="card-body">
                                                         <div class="table-responsive">
                                                             <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-jenis-kelamin" width="100%"
+                                                                id="dataTable-laporan-desa" width="100%"
                                                                 cellspacing="0">
                                                                 <thead>
                                                                     <tr>
@@ -3418,668 +3420,36 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="warga-negara" role="tabpanel"
-                                                aria-labelledby="warga-negara-tab">
-                                                <!-- DataTables Warga Negara -->
-                                                <div class="card shadow mb-4">
-                                                    <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Warga
-                                                            Negara</h6>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-warga-negara" width="100%"
-                                                                cellspacing="0">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>No </th>
-                                                                        <th>Jenis Kelompok </th>
-                                                                        <th>Jumlah </th>
-                                                                        <th>%</th>
-                                                                        <th>Laki-Laki </th>
-                                                                        <th>%</th>
-                                                                        <th>Perempuan </th>
-                                                                        <th>%</th>
-                                                                        <th>&nbsp;</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tfoot>
-                                                                    <tr>
-                                                                        <th>No </th>
-                                                                        <th>Jenis Kelompok </th>
-                                                                        <th>Jumlah </th>
-                                                                        <th>%</th>
-                                                                        <th>Laki-Laki </th>
-                                                                        <th>%</th>
-                                                                        <th>Perempuan </th>
-                                                                        <th>%</th>
-                                                                        <th>&nbsp;</th>
-                                                                    </tr>
-                                                                </tfoot>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td align="center" width="2">1</td>
-                                                                        <td>WNI</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/1/0">2491</a>
-                                                                        </td>
-                                                                        <td>99.92%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/1/1">1219</a>
-                                                                        </td>
-                                                                        <td>48.90%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/1/2">1272</a>
-                                                                        </td>
-                                                                        <td>51.02%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">2</td>
-                                                                        <td>WNA</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/2/0">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/2/1">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/2/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">3</td>
-                                                                        <td>DUA KEWARGANEGARAAN</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/3/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/3/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/5/3/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="golongan-darah" role="tabpanel"
-                                                aria-labelledby="golongan-darah-tab">
-                                                <!-- DataTables Golongan Darah -->
-                                                <div class="card shadow mb-4">
-                                                    <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Golongan
-                                                            Darah</h6>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-golongan-darah" width="100%"
-                                                                cellspacing="0">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>No </th>
-                                                                        <th>Jenis Kelompok </th>
-                                                                        <th>Jumlah </th>
-                                                                        <th>%</th>
-                                                                        <th>Laki-Laki </th>
-                                                                        <th>%</th>
-                                                                        <th>Perempuan </th>
-                                                                        <th>%</th>
-                                                                        <th>&nbsp;</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tfoot>
-                                                                    <tr>
-                                                                        <th>No </th>
-                                                                        <th>Jenis Kelompok </th>
-                                                                        <th>Jumlah </th>
-                                                                        <th>%</th>
-                                                                        <th>Laki-Laki </th>
-                                                                        <th>%</th>
-                                                                        <th>Perempuan </th>
-                                                                        <th>%</th>
-                                                                        <th>&nbsp;</th>
-                                                                    </tr>
-                                                                </tfoot>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td align="center" width="2">1</td>
-                                                                        <td>A</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/1/0">6</a>
-                                                                        </td>
-                                                                        <td>0.24%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/1/1">2</a>
-                                                                        </td>
-                                                                        <td>0.08%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/1/2">4</a>
-                                                                        </td>
-                                                                        <td>0.16%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">2</td>
-                                                                        <td>B</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/2/0">9</a>
-                                                                        </td>
-                                                                        <td>0.36%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/2/1">4</a>
-                                                                        </td>
-                                                                        <td>0.16%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/2/2">5</a>
-                                                                        </td>
-                                                                        <td>0.20%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">3</td>
-                                                                        <td>AB</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/3/0">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/3/1">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/3/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">4</td>
-                                                                        <td>O</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/4/0">21</a>
-                                                                        </td>
-                                                                        <td>0.84%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/4/1">12</a>
-                                                                        </td>
-                                                                        <td>0.48%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/4/2">9</a>
-                                                                        </td>
-                                                                        <td>0.36%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">5</td>
-                                                                        <td>A+</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/5/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/5/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/5/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">6</td>
-                                                                        <td>A-</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/6/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/6/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/6/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">7</td>
-                                                                        <td>B+</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/7/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/7/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/7/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">8</td>
-                                                                        <td>B-</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/8/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/8/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/8/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">9</td>
-                                                                        <td>AB+</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/9/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/9/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/9/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">10</td>
-                                                                        <td>AB-</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/10/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/10/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/10/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">11</td>
-                                                                        <td>O+</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/11/0">2</a>
-                                                                        </td>
-                                                                        <td>0.08%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/11/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/11/2">2</a>
-                                                                        </td>
-                                                                        <td>0.08%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">12</td>
-                                                                        <td>O-</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/12/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/12/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/12/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">13</td>
-                                                                        <td>TIDAK TAHU</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/13/0">2454</a>
-                                                                        </td>
-                                                                        <td>98.44%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/13/1">1202</a>
-                                                                        </td>
-                                                                        <td>48.22%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/7/13/2">1252</a>
-                                                                        </td>
-                                                                        <td>50.22%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="penyandang-cacat" role="tabpanel"
-                                                aria-labelledby="penyandang-cacat-tab">
-                                                <!-- DataTables Penyandang Cacat -->
-                                                <div class="card shadow mb-4">
-                                                    <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">
-                                                            Penyandangan Cacat</h6>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-penyandang-cacat" width="100%"
-                                                                cellspacing="0">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>No </th>
-                                                                        <th>Jenis Kelompok </th>
-                                                                        <th>Jumlah </th>
-                                                                        <th>%</th>
-                                                                        <th>Laki-Laki </th>
-                                                                        <th>%</th>
-                                                                        <th>Perempuan </th>
-                                                                        <th>%</th>
-                                                                        <th>&nbsp;</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tfoot>
-                                                                    <tr>
-                                                                        <th>No </th>
-                                                                        <th>Jenis Kelompok </th>
-                                                                        <th>Jumlah </th>
-                                                                        <th>%</th>
-                                                                        <th>Laki-Laki </th>
-                                                                        <th>%</th>
-                                                                        <th>Perempuan </th>
-                                                                        <th>%</th>
-                                                                        <th>&nbsp;</th>
-                                                                    </tr>
-                                                                </tfoot>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td align="center" width="2">1</td>
-                                                                        <td>CACAT FISIK</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/1/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/1/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/1/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">2</td>
-                                                                        <td>CACAT NETRA/BUTA</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/2/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/2/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/2/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">3</td>
-                                                                        <td>CACAT RUNGU/WICARA</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/3/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/3/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/3/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">4</td>
-                                                                        <td>CACAT MENTAL/JIWA</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/4/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/4/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/4/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">5</td>
-                                                                        <td>CACAT FISIK DAN MENTAL</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/5/0">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/5/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/5/2">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">6</td>
-                                                                        <td>CACAT LAINNYA</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/6/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/6/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/6/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">7</td>
-                                                                        <td>TIDAK CACAT</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/7/0">5</a>
-                                                                        </td>
-                                                                        <td>0.20%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/7/1">4</a>
-                                                                        </td>
-                                                                        <td>0.16%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/9/7/2">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="status-penduduk" role="tabpanel"
-                                                aria-labelledby="status-penduduk-tab">
-                                                <!-- DataTables Status Penduduk -->
-                                                <div class="card shadow mb-4">
-                                                    <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold text-primary">Status
-                                                            Penduduk</h6>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-bordered table-striped compact"
-                                                                id="dataTable-status-penduduk" width="100%"
-                                                                cellspacing="0">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>No </th>
-                                                                        <th>Jenis Kelompok </th>
-                                                                        <th>Jumlah </th>
-                                                                        <th>%</th>
-                                                                        <th>Laki-Laki </th>
-                                                                        <th>%</th>
-                                                                        <th>Perempuan </th>
-                                                                        <th>%</th>
-                                                                        <th>&nbsp;</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tfoot>
-                                                                    <tr>
-                                                                        <th>No </th>
-                                                                        <th>Jenis Kelompok </th>
-                                                                        <th>Jumlah </th>
-                                                                        <th>%</th>
-                                                                        <th>Laki-Laki </th>
-                                                                        <th>%</th>
-                                                                        <th>Perempuan </th>
-                                                                        <th>%</th>
-                                                                        <th>&nbsp;</th>
-                                                                    </tr>
-                                                                </tfoot>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td align="center" width="2">1</td>
-                                                                        <td>TETAP</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/1/0">2492</a>
-                                                                        </td>
-                                                                        <td>99.96%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/1/1">1220</a>
-                                                                        </td>
-                                                                        <td>48.94%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/1/2">1272</a>
-                                                                        </td>
-                                                                        <td>51.02%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">2</td>
-                                                                        <td>TIDAK AKTIF</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/2/0">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/2/1">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/2/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td align="center" width="2">3</td>
-                                                                        <td>PENDATANG</td>
-                                                                        <td align="right">
-                                                                            <a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/3/0">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/3/1">1</a>
-                                                                        </td>
-                                                                        <td>0.04%</td>
-                                                                        <td align="right"><a
-                                                                                href="https://desangunut.gunungkidulkab.go.id/penduduk/statistik/6/3/2">0</a>
-                                                                        </td>
-                                                                        <td>0.00%</td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="laporan-kependudukan" role="tabpanel"
-                                        aria-labelledby="laporan-kependudukan-tab">
-                                        <h5 class="card-title">laporan-kependudukan Pane</h5>
+                                    <div class="tab-pane fade" id="card-menu-statis" role="tabpanel"
+                                        aria-labelledby="card-menu-statis-tab">
+                                        <h5 class="card-title">card-menu-statis Pane</h5>
                                         <p class="card-text">...</p>
                                     </div>
-                                    <div class="tab-pane fade" id="laporan-kelompok-rentan" role="tabpanel"
-                                        aria-labelledby="laporan-kelompok-rentan-tab">
-                                        <h5 class="card-title">laporan-kelompok-rentan Pane</h5>
+                                    <div class="tab-pane fade" id="card-menu-dinamis" role="tabpanel"
+                                        aria-labelledby="card-menu-dinamis-tab">
+                                        <h5 class="card-title">card-menu-dinamis Pane</h5>
+                                        <p class="card-text">...</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="card-komentar" role="tabpanel"
+                                        aria-labelledby="card-komentar-tab">
+                                        <h5 class="card-title">card-komentar Pane</h5>
+                                        <p class="card-text">...</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="card-gallery" role="tabpanel"
+                                        aria-labelledby="card-gallery-tab">
+                                        <h5 class="card-title">card-gallery Pane</h5>
+                                        <p class="card-text">...</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="card-dokumen" role="tabpanel"
+                                        aria-labelledby="card-dokumen-tab">
+                                        <h5 class="card-title">card-dokumen Pane</h5>
+                                        <p class="card-text">...</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="card-media-sosial" role="tabpanel"
+                                        aria-labelledby="card-media-sosial-tab">
+                                        <h5 class="card-title">card-media-sosial Pane</h5>
                                         <p class="card-text">...</p>
                                     </div>
                                 </div>
@@ -4159,7 +3529,7 @@
 
 
         <!-- Page level custom scripts -->
-        <script src="js/demo/datatables-statistik-demo.js"></script>
+        <script src="js/demo/datatables-admin-web.js"></script>
     </body>
 
 </html>
