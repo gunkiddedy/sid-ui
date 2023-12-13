@@ -18,246 +18,230 @@
     <div id="layoutDefault">
         <div id="layoutDefault_content">
             <main>
+                <!-- Sub Navbar -->
+                <nav class="d-none d-md-block bg-color-1">
+                    <div class="container">
+                        <ul class="nav justify-content-end nav-header-sub">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link-light dropdown-toggle" data-bs-toggle="dropdown" href="detail.html" role="button" aria-expanded="false">Profil Desa</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="detail.html">Sejarah Desa</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Potensi Desa</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link-light dropdown-toggle" data-bs-toggle="dropdown" href="detail.html" role="button" aria-expanded="false">Pemerintahan Desa</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="detail.html">Visi Dan Misi</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Pemerintah Desa</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link-light dropdown-toggle" data-bs-toggle="dropdown" href="detail.html" role="button" aria-expanded="false">Data Desa</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="detail.html">Data Administratif</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Data Pendidikan</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Data Pekerjaan</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Data Agama</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Data Jenis Kelamin</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Data Kelompok Umur</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Data Warga Negara</a></li>
+                                    <li><a class="dropdown-item" href="detail.html">Data Analisis</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="detail.html" class="nav-link link-light small">Lembaga
+                                    Masyarakat</a>
+                            </li>
+                            <li class="nav-item"><a href="detail.html" class="nav-link link-light small">Kontak</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
                 <!-- Navbar-->
-                <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
+                <nav class="navbar navbar-marketing navbar-expand-lg bg-gray-500 navbar-light">
                     <div class="container px-5">
-                        <a class="navbar-brand text-dark" href="home.html"> SID GK </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i data-feather="menu"></i>
-                        </button>
+
+                        <div class="logo d-flex justify-content-center p-3">
+                            <div class="logo">
+                                <a href="home.html">
+                                    <img src="./assets/img/logo-gk-removebg-preview.png" alt="Gunung Kidul" height="90">
+                                </a>
+                            </div>
+
+                            <div class="ms-4 d-flex flex-column justify-content-end">
+                                <h4 class="">Kalurahan Candirejo</h4>
+                                <p class="lh-1">
+                                    <small class="lh-1">Kapanewon Semin</small><br>
+                                    <small class="lh-1">Kabupaten Gunungkidul</small>
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto me-lg-5">
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="home.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="kategori.html">Kategori</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="galeri.html">Galeri</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="photo.html">Photo</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="detail.html">Detail</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="single.html">Single</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="static.html">Static</a>
-                                </li>
-
-                                <!-- dropdown nav -->
-                                <!-- <li class="nav-item dropdown dropdown-xl no-caret">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Landings
-                                        <i class="fas fa-chevron-right dropdown-arrow"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15"
-                                        aria-labelledby="navbarDropdownDemos">
-                                        <div class="row g-0">
-                                            <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-primary overlay-70 d-none d-lg-block"
-                                                style="
-                            background-image: url('assets/img/backgrounds/bg-dropdown-xl.jpg');
-                          ">
-                                                <div
-                                                    class="d-flex h-100 w-100 align-items-center justify-content-center">
-                                                    <div class="text-white text-center z-1">
-                                                        <div class="mb-3">
-                                                            Multipurpose landing pages for a variety of
-                                                            projects.
-                                                        </div>
-                                                        <a class="btn btn-white btn-sm text-primary fw-500"
-                                                            href="index.html">View All</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-7 p-lg-5">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <h6 class="dropdown-header text-primary">
-                                                            Applications
-                                                        </h6>
-                                                        <a class="dropdown-item" href="landing-app-mobile.html">Mobile
-                                                            App</a>
-                                                        <a class="dropdown-item" href="landing-app-desktop.html">Desktop
-                                                            App</a>
-                                                        <div class="dropdown-divider border-0"></div>
-                                                        <h6 class="dropdown-header text-primary">
-                                                            Business
-                                                        </h6>
-                                                        <a class="dropdown-item"
-                                                            href="landing-multipurpose.html">Multipurpose</a>
-                                                        <a class="dropdown-item" href="landing-agency.html">Agency</a>
-                                                        <a class="dropdown-item" href="landing-press.html">Press</a>
-                                                        <a class="dropdown-item"
-                                                            href="landing-directory.html">Directory</a>
-                                                        <a class="dropdown-item" href="landing-rental.html">Rental</a>
-                                                        <a class="dropdown-item" href="landing-real-estate.html">Real
-                                                            Estate</a>
-                                                        <a class="dropdown-item"
-                                                            href="landing-classifieds.html">Classifieds</a>
-                                                        <div class="dropdown-divider border-0"></div>
-                                                        <h6 class="dropdown-header text-primary">
-                                                            Lead Generation
-                                                        </h6>
-                                                        <a class="dropdown-item" href="landing-lead-capture.html">Lead
-                                                            Capture</a>
-                                                        <div class="dropdown-divider border-0 d-lg-none"></div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <h6 class="dropdown-header text-primary">
-                                                            Personal
-                                                        </h6>
-                                                        <a class="dropdown-item" href="landing-resume.html">Resume</a>
-                                                        <a class="dropdown-item"
-                                                            href="landing-portfolio.html">Portfolio</a>
-                                                        <div class="dropdown-divider border-0"></div>
-                                                        <h6 class="dropdown-header text-primary">
-                                                            Header Styles
-                                                        </h6>
-                                                        <a class="dropdown-item" href="header-basic.html">Basic</a>
-                                                        <a class="dropdown-item" href="header-basic-signup.html">Basic
-                                                            (Signup)</a>
-                                                        <a class="dropdown-item" href="header-graphic.html">Graphic</a>
-                                                        <a class="dropdown-item"
-                                                            href="header-graphic-signup.html">Graphic (Signup)</a>
-                                                        <a class="dropdown-item" href="header-video.html">
-                                                            Video Header
-                                                            <span
-                                                                class="badge bg-primary-soft text-primary ms-1">New!</span>
-                                                        </a>
-                                                        <a class="dropdown-item" href="header-inner-page.html">Inner
-                                                            Page</a>
-                                                        <a class="dropdown-item" href="header-nav-only.html">Nav
-                                                            Only</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item dropdown dropdown-xl no-caret">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Pages
-                                        <i class="fas fa-chevron-right dropdown-arrow"></i>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-end me-lg-n20 me-xl-n15 animated--fade-in-up"
-                                        aria-labelledby="navbarDropdownPages">
-                                        <div class="row g-0">
-                                            <div class="col-lg-4 p-lg-5">
-                                                <h6 class="dropdown-header text-primary">Company</h6>
-                                                <a class="dropdown-item" href="page-basic.html">Basic Page</a>
-                                                <a class="dropdown-item" href="page-company-about.html">About</a>
-                                                <a class="dropdown-item" href="page-company-pricing.html">Pricing</a>
-                                                <a class="dropdown-item" href="page-company-contact.html">Contact</a>
-                                                <a class="dropdown-item" href="page-company-team.html">Team</a>
-                                                <a class="dropdown-item" href="page-company-terms.html">Terms</a>
-                                                <div class="dropdown-divider border-0"></div>
-                                                <h6 class="dropdown-header text-primary">Support</h6>
-                                                <a class="dropdown-item" href="page-help-center.html">Help Center</a>
-                                                <a class="dropdown-item"
-                                                    href="page-help-knowledgebase.html">Knowledgebase</a>
-                                                <a class="dropdown-item" href="page-help-message-center.html">Message
-                                                    Center</a>
-                                                <a class="dropdown-item" href="page-help-support-ticket.html">Support
-                                                    Ticket</a>
-                                                <div class="dropdown-divider border-0 d-lg-none"></div>
-                                            </div>
-                                            <div class="col-lg-4 p-lg-5">
-                                                <h6 class="dropdown-header text-primary">Careers</h6>
-                                                <a class="dropdown-item" href="page-careers-overview.html">Careers
-                                                    List</a>
-                                                <a class="dropdown-item" href="page-careers-listing.html">Position
-                                                    Details</a>
-                                                <div class="dropdown-divider border-0"></div>
-                                                <h6 class="dropdown-header text-primary">Blog</h6>
-                                                <a class="dropdown-item" href="page-blog-overview.html">Overview</a>
-                                                <a class="dropdown-item" href="page-blog-post.html">Post</a>
-                                                <a class="dropdown-item" href="page-blog-archive.html">Archive</a>
-                                                <div class="dropdown-divider border-0"></div>
-                                                <h6 class="dropdown-header text-primary">
-                                                    Portfolio
-                                                </h6>
-                                                <a class="dropdown-item" href="page-portfolio-grid.html">Grid</a>
-                                                <a class="dropdown-item" href="page-portfolio-large-grid.html">Large
-                                                    Grid</a>
-                                                <a class="dropdown-item" href="page-portfolio-masonry.html">Masonry</a>
-                                                <a class="dropdown-item" href="page-portfolio-case-study.html">Case
-                                                    Study</a>
-                                                <a class="dropdown-item" href="page-portfolio-project.html">Project</a>
-                                                <div class="dropdown-divider border-0 d-lg-none"></div>
-                                            </div>
-                                            <div class="col-lg-4 p-lg-5">
-                                                <h6 class="dropdown-header text-primary">Error</h6>
-                                                <a class="dropdown-item" href="page-error-400.html">400 Error</a>
-                                                <a class="dropdown-item" href="page-error-401.html">401 Error</a>
-                                                <a class="dropdown-item" href="page-error-404-1.html">404 Error (Option
-                                                    1)</a>
-                                                <a class="dropdown-item" href="page-error-404-2.html">404 Error (Option
-                                                    2)</a>
-                                                <a class="dropdown-item" href="page-error-500.html">500 Error</a>
-                                                <a class="dropdown-item" href="page-error-503.html">503 Error</a>
-                                                <a class="dropdown-item" href="page-error-504.html">504 Error</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
+                                <li class="nav-item"><a class="nav-link" href="home.html">Beranda</a></li>
                                 <li class="nav-item dropdown no-caret">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Documentation
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Berita Desa
                                         <i class="fas fa-chevron-right dropdown-arrow"></i>
                                     </a>
-                                    <div class="dropdown-menu dropdown-menu-end animated--fade-in-up"
-                                        aria-labelledby="navbarDropdownDocs">
-                                        <a class="dropdown-item py-3"
-                                            href="https://docs.startbootstrap.com/sb-ui-kit-pro/quickstart"
-                                            target="_blank">
-                                            <div class="icon-stack bg-primary-soft text-primary me-4">
-                                                <i data-feather="book-open"></i>
-                                            </div>
+                                    <div class="dropdown-menu dropdown-menu-end animated--fade-in-up" aria-labelledby="navbarDropdownDocs">
+                                        <a class="dropdown-item py-3" href="" target="_blank">
                                             <div>
-                                                <div class="small text-gray-500">Documentation</div>
-                                                Usage instructions and reference
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Program Bantuan Pengeboran Sumur Dinas PUPR
                                             </div>
                                         </a>
                                         <div class="dropdown-divider m-0"></div>
-                                        <a class="dropdown-item py-3"
-                                            href="https://docs.startbootstrap.com/sb-ui-kit-pro/components"
-                                            target="_blank">
-                                            <div class="icon-stack bg-primary-soft text-primary me-4">
-                                                <i data-feather="code"></i>
-                                            </div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
                                             <div>
-                                                <div class="small text-gray-500">Components</div>
-                                                Code snippets and reference
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
                                             </div>
                                         </a>
                                         <div class="dropdown-divider m-0"></div>
-                                        <a class="dropdown-item py-3"
-                                            href="https://docs.startbootstrap.com/sb-ui-kit-pro/changelog"
-                                            target="_blank">
-                                            <div class="icon-stack bg-primary-soft text-primary me-4">
-                                                <i data-feather="file-text"></i>
-                                            </div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
                                             <div>
-                                                <div class="small text-gray-500">Changelog</div>
-                                                Updates and changes
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
                                             </div>
                                         </a>
                                     </div>
-                                </li> -->
+                                </li>
+                                <li class="nav-item dropdown no-caret">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Agenda Desa
+                                        <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end animated--fade-in-up" aria-labelledby="navbarDropdownDocs">
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Program Bantuan Pengeboran Sumur Dinas PUPR
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pawai Karnaval Dan Lomba Hari Kemerdekaan
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown no-caret">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Produk Desa
+                                        <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end animated--fade-in-up" aria-labelledby="navbarDropdownDocs">
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Produksi Kripik Tempe
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Pusat Kerajinan Eceng Gondok
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Revitalisasi Umbul Untuk Wisata
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Bantuan Mesin Giling Pakan
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-divider m-0"></div>
+                                        <a class="dropdown-item py-3" href="" target="_blank">
+                                            <div>
+                                                <div class="small text-gray-500">10 hari yang lalu</div>
+                                                Sapi Paling Besar Se-Kabupaten
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown d-block d-sm-block d-md-none">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Profile</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Sejarah Desa</a></li>
+                                        <li><a class="dropdown-item" href="#">Potensi Desa</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown d-block d-sm-block d-md-none">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pemerintahan Desa</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Visi Dan Misi</a></li>
+                                        <li><a class="dropdown-item" href="#">Pemerintah Desa</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item d-block d-sm-block d-md-none"><a href="" class="nav-link small">Lembaga Masyarakat</a></li>
+                                <li class="nav-item d-block d-sm-block d-md-none"><a href="" class="nav-link small">Data
+                                        Desa</a></li>
+                                <li class="nav-item d-block d-sm-block d-md-none"><a href="" class="nav-link small">Kontak</a></li>
                             </ul>
-                            <a class="btn fw-500 ms-lg-4 btn-teal" href="">
-                                Lihat Berita
+                            <a class="btn fw-500 ms-lg-4 btn-teal" href="#">
+                                Pencarian
                                 <i class="ms-2" data-feather="arrow-right"></i>
                             </a>
                         </div>
@@ -270,7 +254,7 @@
                             <div class="col-lg-10 col-xl-8">
                                 <div class="single-post">
                                     <h1>
-                                        Boots on the Ground, Inclusive Thought Provoking Ideas
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit
                                     </h1>
                                     <p class="lead">
                                         Empower communities and energize engaging ideas; scale and
@@ -283,10 +267,10 @@
                                             <img class="single-post-meta-img" src="assets/img/illustrations/profiles/profile-1.png" />
                                             <div class="single-post-meta-details">
                                                 <div class="single-post-meta-details-name">
-                                                    Valerie Luna
+                                                    Budi Gunawan
                                                 </div>
                                                 <div class="single-post-meta-details-date">
-                                                    Feb 5 &middot; 6 min read
+                                                    2 jam yang lalu
                                                 </div>
                                             </div>
                                         </div>
@@ -404,14 +388,19 @@
             </main>
         </div>
 
-        <!-- footer -->
         <div id="layoutDefault_footer">
             <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
                 <div class="container px-5">
                     <div class="row gx-5">
                         <div class="col-lg-3">
-                            <div class="footer-brand">SID GK</div>
-                            <div class="mb-3">Kalurahan Ponjong</div>
+                            <div class="footer-brand">
+                                <img src="./assets/img/logo-gk.png" class="w-20" alt="">
+                            </div>
+                            <div class="mb-3">
+                                <p>Kalurahan Candirejo</p>
+                                <small>Blembem RT 10/01 Kalurahan Candirejo,</small><br />
+                                <small>Kapanewon Semin, Kabupaten Gunungkidul</small>
+                            </div>
                             <div class="icon-list-social mb-5">
                                 <a class="icon-list-social-link" href="#!"><i class="fab fa-instagram"></i></a>
                                 <a class="icon-list-social-link" href="#!"><i class="fab fa-facebook"></i></a>
@@ -426,12 +415,12 @@
                                         Profil Desa
                                     </div>
                                     <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a href="#!">Sejarah Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Potensi Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Visi Misi Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Pemerintah Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Lembaga Masyarakat</a></li>
-                                        <li class="mb-2"><a href="#!">Hubungi Kami</a></li>
+                                        <li class="mb-2"><a href="single.html">Sejarah Desa</a></li>
+                                        <li class="mb-2"><a href="single.html">Potensi Desa</a></li>
+                                        <li class="mb-2"><a href="single.html">Visi Misi Desa</a></li>
+                                        <li class="mb-2"><a href="single.html">Pemerintah Desa</a></li>
+                                        <li class="mb-2"><a href="single.html">Lembaga Masyarakat</a></li>
+                                        <li class="mb-2"><a href="single.html">Hubungi Kami</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
@@ -439,12 +428,12 @@
                                         Data Desa
                                     </div>
                                     <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a href="#!">Data Wilayah Administratif</a></li>
-                                        <li class="mb-2"><a href="#!">Data Pendidikan</a></li>
-                                        <li class="mb-2"><a href="#!">Data Pekerjaan</a></li>
-                                        <li class="mb-2"><a href="#!">Data Kelompok Umur</a></li>
-                                        <li class="mb-2"><a href="#!">Data Warga Negara</a></li>
-                                        <li class="mb-2"><a href="#!">Data Analisis</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Data Wilayah Administratif</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Data Pendidikan</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Data Pekerjaan</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Data Kelompok Umur</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Data Warga Negara</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Data Analisis</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
@@ -452,12 +441,12 @@
                                         Informasi Desa
                                     </div>
                                     <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a href="#!">Berita Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Produk Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Agenda Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Peraturan Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Laporan Desa</a></li>
-                                        <li class="mb-2"><a href="#!">Panduan Layanan Desa</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Berita Desa</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Produk Desa</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Agenda Desa</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Peraturan Desa</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Laporan Desa</a></li>
+                                        <li class="mb-2"><a href="kategori.html">Panduan Layanan Desa</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -467,12 +456,15 @@
                     <div class="row gx-5 align-items-center">
                         <div class="col-md-6 small">
                             Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script>. Sistem Informasi Desa (SID) Kabupaten Gunungkidul
+                            <script>document.write(new Date().getFullYear());</script>. Sistem Informasi Desa (SID)
+                            Kabupaten Gunungkidul
                         </div>
                         <div class="col-md-6 text-md-end small">
-                            <a href="#!">Kebijakan Privasi</a>
+                            <a href="privasi.html">Kebijakan Privasi</a>
                             &middot;
-                            <a href="#!">Syarat &amp; Ketentuan</a>
+                            <a href="ketentuan.html">Syarat &amp; Ketentuan</a>
+                            &middot;
+                            <a href="tentang-sid.html">Tentang &amp; SID</a>
                         </div>
                     </div>
                 </div>
