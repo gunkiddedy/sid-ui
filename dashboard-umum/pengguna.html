@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SID | Kalurahan Tawarsari</title>
+    <title>SID - Kalurahan Ngunut</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,15 +22,6 @@
     <link href="vendor/datatables/DataTables-1.13.8/css/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="vendor/datatables/extensions/Buttons-2.4.2/css/buttons.bootstrap4.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./img/gkk.png" type="image/x-icon">
-
-    <!-- 
-
-            <link href="DataTables-1.13.8/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="Buttons-2.4.2/css/buttons.bootstrap4.min.css" rel="stylesheet">
-    
-     -->
-
-
 </head>
 
 <body id="page-top">
@@ -47,21 +38,17 @@
                     <!-- <i class="fas fa-laugh-wink"></i> -->
                     <img src="./img/gkk.png" height="50px" alt="Logo Gunungkidul">
                 </div>
-                <div class="mx-3 text-sm align-left">
-                    <small>SID Kalurahan Tawarsari</small>
-                    <br />
-                    <small></small>
-                </div>
+                <div class="sidebar-brand-text mx-3">SID NGUNUT</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-home"></i>
-                    <span>Beranda</span></a>
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>SID Home</span></a>
             </li>
 
             <!-- Divider -->
@@ -106,7 +93,7 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link active" href="program-bantuan.html">
+                <a class="nav-link" href="program-bantuan.html">
                     <i class="fas fa-fw fa-hands-helping"></i>
                     <span>Program Bantuan</span></a>
             </li>
@@ -116,7 +103,7 @@
             </div>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="pengguna.html">
                     <i class="fas fa-fw fa-id-card"></i>
                     <span>Pengguna</span></a>
@@ -339,11 +326,10 @@
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Pengguna</h1>
-
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Daftar Pengguna</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Manajemen Pengguna</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -351,91 +337,343 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
+                                            <th>Aksi</th>
+                                            <th>Username</th>
                                             <th>Nama</th>
-                                            <th>Alamat Email</th>
-                                            <th>Peran</th>
-                                            <th>Login terakhir</th>
+                                            <th>Group</th>
+                                            <th>Last Login</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>No</th>
+                                            <th>Aksi</th>
+                                            <th>Username</th>
                                             <th>Nama</th>
-                                            <th>Alamat Email</th>
-                                            <th>Peran</th>
-                                            <th>Login terakhir</th>
+                                            <th>Group</th>
+                                            <th>Last Login</th>
                                         </tr>
                                     </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td class="angka" style="width:40px;">1</td>
-                                            <td>
-                                                <div class="uibutton-group">
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/menu/11" class="btn btn-sm btn-info"><i class="fa fa-list"></i>
-                                                        Rincian</a>
+                                    <tr>
+                                        <td align="center" width="2">1</td>
 
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
-                                                </div>
-                                            </td>
-                                            <td><a href="https://desangunut.gunungkidulkab.go.id/program_bantuan/detail/4">BPNT</a>
-                                            </td>
-                                            <td>24 - 31 Jan 2018</td>
-                                            <td><a href="https://desangunut.gunungkidulkab.go.id/program_bantuan/sasaran/1/Penduduk">Penduduk</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="angka" style="width:40px;">2</td>
-                                            <td>
-                                                <div class="uibutton-group">
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/menu/11" class="btn btn-sm btn-info"><i class="fa fa-list"></i>
-                                                        Rincian</a>
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
 
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
-                                                </div>
-                                            </td>
-                                            <td><a href="https://desangunut.gunungkidulkab.go.id/program_bantuan/detail/5">HMMAS</a>
-                                            </td>
-                                            <td>27 - 31 Jan 2018</td>
-                                            <td><a href="https://desangunut.gunungkidulkab.go.id/program_bantuan/sasaran/3/Rumah Tangga">Rumah
-                                                    Tangga</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="angka" style="width:40px;">3</td>
-                                            <td>
-                                                <div class="uibutton-group">
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/menu/11" class="btn btn-sm btn-info"><i class="fa fa-list"></i>
-                                                        Rincian</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>ajekss</td>
+                                        <td>Ajeks</td>
+                                        <td>Administrator</td>
+                                        <td>02 November 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">2</td>
 
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
-                                                </div>
-                                            </td>
-                                            <td><a href="https://desangunut.gunungkidulkab.go.id/program_bantuan/detail/6">PKH</a>
-                                            </td>
-                                            <td>1 May 2019 - 1 Apr 2020</td>
-                                            <td><a href="https://desangunut.gunungkidulkab.go.id/program_bantuan/sasaran/2/Keluarga / KK">Keluarga
-                                                    / KK</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="angka" style="width:40px;">4</td>
-                                            <td>
-                                                <div class="uibutton-group">
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/menu/11" class="btn btn-sm btn-info"><i class="fa fa-list"></i>
-                                                        Rincian</a>
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
 
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
-                                                    <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
-                                                </div>
-                                            </td>
-                                            <td><a href="https://desangunut.gunungkidulkab.go.id/program_bantuan/detail/8">BSPS
-                                                    RTLH</a></td>
-                                            <td>1 Jan - 31 Dec 2022</td>
-                                            <td><a href="https://desangunut.gunungkidulkab.go.id/program_bantuan/sasaran/3/Rumah Tangga">Rumah
-                                                    Tangga</a></td>
-                                        </tr>
-                                    </tbody>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>aminto</td>
+                                        <td>Aminto Sudarso</td>
+                                        <td>Administrator</td>
+                                        <td>25 November 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">3</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>Desi</td>
+                                        <td></td>
+                                        <td>Operator</td>
+                                        <td>13 November 2022</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">4</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>dinkes</td>
+                                        <td>Pemantauan</td>
+                                        <td>Operator IKS</td>
+                                        <td>23 Maret 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">5</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>djunian</td>
+                                        <td>Djunian</td>
+                                        <td>Administrator</td>
+                                        <td>10 Desember 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">6</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>hanung</td>
+                                        <td>Hanung</td>
+                                        <td>Administrator</td>
+                                        <td>04 Desember 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">7</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk01</td>
+                                        <td>Veronika R</td>
+                                        <td>Operator IKS</td>
+                                        <td>28 Februari 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">8</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk02</td>
+                                        <td>Operator Puskesmas 02</td>
+                                        <td>Operator IKS</td>
+                                        <td>00 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">9</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk03</td>
+                                        <td>Operator Puskesmas 03</td>
+                                        <td>Operator IKS</td>
+                                        <td>00 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">10</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk04</td>
+                                        <td>Operator Puskesmas 04</td>
+                                        <td>Operator IKS</td>
+                                        <td>00 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">11</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk05</td>
+                                        <td>Operator Puskesmas 05</td>
+                                        <td>Operator IKS</td>
+                                        <td>08 Juli 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">12</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk06</td>
+                                        <td>Operator Puskesmas 06</td>
+                                        <td>Operator IKS</td>
+                                        <td>00 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">13</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk07</td>
+                                        <td>Operator Puskesmas 07</td>
+                                        <td>Operator IKS</td>
+                                        <td>31 Oktober 2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">14</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk08</td>
+                                        <td>Operator Puskesmas 08</td>
+                                        <td>Operator IKS</td>
+                                        <td>00 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">15</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk09</td>
+                                        <td>Operator Puskesmas 09</td>
+                                        <td>Operator IKS</td>
+                                        <td>00 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">16</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>iks_dinkesgk10</td>
+                                        <td>Operator Puskesmas 10</td>
+                                        <td>Operator IKS</td>
+                                        <td>00 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">17</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>Jey</td>
+                                        <td></td>
+                                        <td>Operator</td>
+                                        <td>02 November 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">18</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>KKN</td>
+                                        <td></td>
+                                        <td>Redaksi</td>
+                                        <td>21 Agustus 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">19</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>KKNkernen</td>
+                                        <td></td>
+                                        <td>Kontributor</td>
+                                        <td>00 0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" width="2">20</td>
+
+                                        <td>
+                                            <div class="uibutton-group">
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-warning" title="Ubah Data"><i class="fa fa-edit"></i> Ubah</a>
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-danger" title="Ubah Data"><i class="fa fa-trash"></i> Hapus</a>
+
+                                                <a href="https://desangunut.gunungkidulkab.go.id/analisis_master/form/1/0/11" class="btn btn-sm btn-secondary" title="Ubah Data"><i class="fa fa-lock"></i> </a>
+                                            </div>
+                                        </td>
+                                        <td>KKNlor</td>
+                                        <td></td>
+                                        <td>Redaksi</td>
+                                        <td>19 Maret 2023</td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
@@ -513,7 +751,7 @@
 
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-program-bantuan.js"></script>
+    <script src="js/demo/datatables-pengguna.js"></script>
 </body>
 
 </html>

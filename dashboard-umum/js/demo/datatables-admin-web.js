@@ -28,7 +28,7 @@ $(document).ready(function () {
 
   table.buttons().container().appendTo("#dataTable_wrapper .col-md-6:eq(0)");
 
-  const tablePendidikanDalamKK = $("#dataTable-pendidikan-dalam-kk").DataTable({
+  const tablePendidikanDalamKK = $("#dataTable-sekilas-info").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
@@ -36,11 +36,9 @@ $(document).ready(function () {
   tablePendidikanDalamKK
     .buttons()
     .container()
-    .appendTo("#dataTable-pendidikan-dalam-kk_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-sekilas-info_wrapper .col-md-6:eq(0)");
 
-  const tablePendidikanSedangDitempuh = $(
-    "#dataTable-pendidikan-sedang-ditempuh"
-  ).DataTable({
+  const tablePendidikanSedangDitempuh = $("#dataTable-agenda-desa").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
@@ -48,9 +46,9 @@ $(document).ready(function () {
   tablePendidikanSedangDitempuh
     .buttons()
     .container()
-    .appendTo("#dataTable-pendidikan-sedang-ditempuh_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-agenda-desa_wrapper .col-md-6:eq(0)");
 
-  const tablePekerjaan = $("#dataTable-pekerjaan").DataTable({
+  const tablePekerjaan = $("#dataTable-produk-desa").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
@@ -58,9 +56,9 @@ $(document).ready(function () {
   tablePekerjaan
     .buttons()
     .container()
-    .appendTo("#dataTable-pekerjaan_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-produk-desa_wrapper .col-md-6:eq(0)");
 
-  const tableStatusPerkawinan = $("#dataTable-status-perkawinan").DataTable({
+  const tableStatusPerkawinan = $("#dataTable-panduan-layanan-desa").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
@@ -68,9 +66,9 @@ $(document).ready(function () {
   tableStatusPerkawinan
     .buttons()
     .container()
-    .appendTo("#dataTable-status-perkawinan_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-panduan-layanan-desa_wrapper .col-md-6:eq(0)");
 
-  const tableAgama = $("#dataTable-agama").DataTable({
+  const tableAgama = $("#dataTable-peraturan-desa").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
@@ -78,9 +76,9 @@ $(document).ready(function () {
   tableAgama
     .buttons()
     .container()
-    .appendTo("#dataTable-agama_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-peraturan-desa_wrapper .col-md-6:eq(0)");
 
-  const tableJenisKelamin = $("#dataTable-jenis-kelamin").DataTable({
+  const tableJenisKelamin = $("#dataTable-laporan-desa").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
@@ -88,71 +86,65 @@ $(document).ready(function () {
   tableJenisKelamin
     .buttons()
     .container()
-    .appendTo("#dataTable-jenis-kelamin_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-laporan-desa_wrapper .col-md-6:eq(0)");
 
-  const tableWargaNegara = $("#dataTable-warga-negara").DataTable({
+  const tableMenuStatis = $("#dataTable-menu-statis").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
 
-  tableWargaNegara
+  tableMenuStatis
     .buttons()
     .container()
-    .appendTo("#dataTable-warga-negara_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-menu-statis_wrapper .col-md-6:eq(0)");
 
-  const tableGolonganDarah = $("#dataTable-golongan-darah").DataTable({
+  const tableMenuDinamis = $("#dataTable-pengolahan-kategori").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
 
-  tableGolonganDarah
+  tableMenuDinamis
     .buttons()
     .container()
-    .appendTo("#dataTable-golongan-darah_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-pengolahan-kategori_wrapper .col-md-6:eq(0)");
 
-  const tablePenyandangCacat = $("#dataTable-penyandang-cacat").DataTable({
+  const tableDaftarKomentar = $("#dataTable-daftar-komentar").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
 
-  tablePenyandangCacat
+  tableDaftarKomentar
     .buttons()
     .container()
-    .appendTo("#dataTable-penyandang-cacat_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-daftar-komentar_wrapper .col-md-6:eq(0)");
 
-  const tableStatusPenduduk = $("#dataTable-status-penduduk").DataTable({
+  const tableDaftarGaleri = $("#dataTable-daftar-galeri").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
 
-  tableStatusPenduduk
+  tableDaftarGaleri
     .buttons()
     .container()
-    .appendTo("#dataTable-status-penduduk_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-daftar-galeri_wrapper .col-md-6:eq(0)");
 
-  const tableLaporanPerkembanganPenduduk = $(
-    "#dataTable-laporan-perkembangan-penduduk"
-  ).DataTable({
+  const tableDaftarDokumen = $("#dataTable-daftar-dokumen").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
 
-  tableLaporanPerkembanganPenduduk
+  tableDaftarDokumen
     .buttons()
     .container()
-    .appendTo(
-      "#dataTable-laporan-perkembangan-penduduk_wrapper .col-md-6:eq(0)"
-    );
+    .appendTo("#dataTable-daftar-dokumen_wrapper .col-md-6:eq(0)");
 
-  const tablelaporanKelompokRentan = $(
-    "#dataTable-laporan-kelompok-rentan"
-  ).DataTable({
+  const tableSocialMedia = $("#dataTable-social-media").DataTable({
     lengthChange: false,
     buttons: defaultButton,
   });
 
-  tablelaporanKelompokRentan
+  tableSocialMedia
     .buttons()
     .container()
-    .appendTo("#dataTable-laporan-kelompok-rentan_wrapper .col-md-6:eq(0)");
+    .appendTo("#dataTable-social-media_wrapper .col-md-6:eq(0)");
 });
