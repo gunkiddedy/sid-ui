@@ -7,7 +7,7 @@ $(document).ready(function () {
         text: `<i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Tambah Analisis Baru`,
         className: "btn-sm",
         action: function (e, dt, node, config) {
-          dt.ajax.reload();
+          window.location.href = "./create-analisis.html";
         },
       },
       {
