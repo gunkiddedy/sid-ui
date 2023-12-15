@@ -2,10 +2,10 @@
 
 const defaultButton = [
   {
-    text: `<i class="fa fa-trash" aria-hidden="true"></i></i>&nbsp;Hapus Data`,
+    text: `<i class="fa fa-edit" aria-hidden="true"></i></i>&nbsp;Tulis Artikel`,
     className: "btn-sm",
     action: function (e, dt, node, config) {
-      dt.ajax.reload();
+      window.location.href = "./create-artikel.html";
     },
   },
   {

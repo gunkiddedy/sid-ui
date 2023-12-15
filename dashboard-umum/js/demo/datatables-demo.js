@@ -3,7 +3,7 @@ const btns = [
     text: `<i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Penduduk Domisili`,
     className: "btn-sm",
     action: function (e, dt, node, config) {
-      dt.ajax.reload();
+      window.location.href = "./create-penduduk.html";
     },
   },
   {
